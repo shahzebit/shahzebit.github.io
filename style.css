@@ -11,7 +11,7 @@ body{
     justify-content: center;
     padding: 10px;
     align-items: center;
-    background: linear-gradient(135deg, #71b7e6,#a04ac3);
+    background: linear-gradient(125deg, #7f71e6,#ca4545);
 }
 .container{
     max-width: 700px;
@@ -33,7 +33,7 @@ body{
     bottom: 0;
     height: 3px;
     width: 30px;
-    background: #9b59b6 ;
+    background: #59b65f ;
 
 }
 .container form .user_details{
@@ -61,7 +61,7 @@ form .user_details .input-box{
     padding-left: 15px;
     font-size: 16px;
     border-bottom-width: 2px;
-    transition: all 0.3s ease:
+    transition: all 0.3s ease;
 }
 .user_details .input-box input:focus,
 .user_details .input-box input:valid{
@@ -81,4 +81,69 @@ form .gender-details .category{
     display: flex;
     align-items: center;
 }
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
 
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: #9b59b6;
+
+}
+form input[type="radio"]
+{
+    display: none;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background: linear-gradient(125deg, #7f71e6,#ca4545);
+
+}
+form .button input:hover
+{
+    background: linear-gradient(-125deg, #7f71e6,#ca4545);
+}
+@media(max-width: 584px)
+{
+    .container{
+        max-width: 100%;
+    }
+    form .user_details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .category{
+        width: 100%;
+
+    }
+    .container form .user_details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user_details::-webkit-scrollbar{
+        width: 0;
+    }
+    form .gender-details .category{
+        width: 100%;
+    }
+}

@@ -10,55 +10,55 @@
 <body>
     <div class="container">
         <div class="title">Registration Form for IR Cell</div>
-        <form action="#">
+        <form action="#" onsubmit="return validateForm()" >
             <div class="user_details">
                 <div class="input-box">
                     <span class="details"> Full Name: </span>
-                    <input type="text" name="" id=""placeholder = "Enter your Name" required>
+                    <input type="text" name="" id="fname" placeholder = "Enter your Name" required>
                 </div>
                 <div class="input-box">
                     <span class="details"> Username: </span>
-                    <input type="text" name="" id=""placeholder = "Enter your Username" required>
+                    <input type="text" name="" id="uname"placeholder = "Enter your Username" required>
                 </div>
                 <div class="input-box">
                     <span class="details"> Email: </span>
-                    <input type="text" name="" id=""placeholder = "Enter your Email" required>
+                    <input type="text" name="" id="mail"placeholder = "Enter your Email" required>
                 </div>
                 <div class="input-box">
                     <span class="details"> Roll No: </span>
-                    <input type="text" name="" id=""placeholder = "Enter your Roll no. " required>
+                    <input type="text" name="" id="roll"placeholder = "Enter your Roll no. " required>
                 </div>
                 <div class="input-box">
                     <span class="details"> Phone Number: </span>
-                    <input type="text" name="" id=""placeholder = "Enter your Number" required>
+                    <input type="text" name="" id="number"placeholder = "Enter your Number" required>
                 </div>
                 <div class="input-box">
                     <span class="details"> Password : </span>
-                    <input type="password" name="" id=""placeholder = "Set password" required>
+                    <input type="password" name="" id="password"placeholder = "Set password" required>
                 </div>
                 <div class="input-box">
-                    <span class="details"> Confirm Password </span>
-                    <input type="password" name="" id=""placeholder = "Re-enter password" required>
+                    <span class="details"> Confirm Password: </span>
+                    <input type="password" name="" id="confpassword"placeholder = "Re-enter password" required>
                 </div>
 
             </div>
             <div class="gender-details">
-                <span class="gender-title">Gender</span>
+                <input type="radio" name ="gender" id="dot-1">
+                <input type="radio" name ="gender" id="dot-2">
+                <input type="radio" name ="gender" id="dot-3">
+                <span class="gender-title">Gender:</span>
                 <div class="category">
-                    <label for="dot1">
+                    <label for="dot-1">
                         <span class="dot one"></span>
-                        <input type="radio" name ="gender" id="dot1">
                         <span class="gender">Male</span>
                     </label>
-                    <label for="dot2">
-                        <span class="dot one"></span>
-                        <input type="radio" name ="gender" id="dot2">
+                    <label for="dot-2">
+                        <span class="dot two"></span>
                         <span class="gender">Female</span>
                     </label>
-                    <label for="dot3">
-                        <span class="dot one"></span>
-                        <input type="radio" name ="gender" id="dot3">
-                        <span class="gender">Prefer Not to say</span>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Others</span>
                     </label>
                 </div>
                 <div class="button">
@@ -67,5 +67,7 @@
             </div>
         </form>
     </div>
+
+    <script src="validate.js"></script>
 </body>
 </html>
