@@ -105,5 +105,6 @@ function validateForm() {
         alert("Enter Gender");
         return false     
     }
+    alert("Thank you for Registering");
     return true;
 }
