@@ -11,7 +11,7 @@ body{
     justify-content: center;
     padding: 10px;
     align-items: center;
-    background: linear-gradient(125deg, #7f71e6,#ca4545);
+    background: linear-gradient(125deg, #79C131,#161616);
 }
 .container{
     max-width: 700px;
@@ -116,7 +116,7 @@ form .button input{
     color: #fff;
     letter-spacing: 1px;
     border-radius: 5px;
-    background: linear-gradient(125deg, #7f71e6,#ca4545);
+    background: linear-gradient(125deg, #79C131,#161616);
 
 }
 form .button input:hover
