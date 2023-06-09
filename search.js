@@ -6,16 +6,17 @@ searchInput.addEventListener('input', function ()
     if (searchTerm.length >= 1) {
         for (var i = 0; i < items.length; i++)
          {
-            const item = items[i];
+           item = items[i];
             var itemText = item.textContent.toLowerCase();
             if (itemText.indexOf(searchTerm) > -1) 
             {
                 item.style.borderColor = "green";
                 item.style.boxShadow = "0 0 1rem green";
-                setTimeout(() => {
+            }
+            else
+            {
                     item.style.borderColor = "none";
-                    item.style.boxShadow = "none"
-                }, 3000)
+                    item.style.boxShadow = "none";
             }
         }
     }
